@@ -1,0 +1,2177 @@
+[
+    {
+        "id": "321d49d9e41de9aa",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2ca43265f937fbf2",
+        "type": "tab",
+        "label": "Patient Profile",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7b0512bfde0a49a4",
+        "type": "mqtt-broker",
+        "name": "Classroom Server",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b9ca4eb937cd9e74",
+        "type": "ui-base",
+        "name": "SMART SILENT HOSPITAL ASSISTANT",
+        "path": "/dashboard",
+        "appIcon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCp_s5HNTrCFPjipHl1L29yL37a715wrNC1h2rJovtmA&s",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "e22023412538412b",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cda494fbce598d66",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "880c1e7bb00d76a7",
+        "type": "ui_group",
+        "name": "team9 Dashboard",
+        "tab": "e22023412538412b",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "df6cd13c900405fa",
+        "type": "ui-spacer",
+        "group": "",
+        "name": "spacer",
+        "order": 3,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "df6ccc1558582fbf",
+        "type": "ui-spacer",
+        "group": "",
+        "name": "spacer",
+        "order": 6,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "91e580087985d506",
+        "type": "ui-page",
+        "name": "Patient Profile",
+        "ui": "b9ca4eb937cd9e74",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "3cd335d72575d2b2",
+        "type": "ui-group",
+        "name": "Medical Info",
+        "page": "91e580087985d506",
+        "width": "6",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "9bdfbd83b4063a4a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "29fcea56379edb7d",
+        "type": "websocket-listener",
+        "path": "/sensor",
+        "wholemsg": "false"
+    },
+    {
+        "id": "c3864b1e29e86242",
+        "type": "ui-group",
+        "name": "Header",
+        "page": "91e580087985d506",
+        "width": "24",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ad83361f132eeae5",
+        "type": "ui-group",
+        "name": "Patient Details",
+        "page": "91e580087985d506",
+        "width": "6",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "Blue Header #1976d2",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e0ea2f2bc6d56b75",
+        "type": "ui-page",
+        "name": "Ward Monitor",
+        "ui": "b9ca4eb937cd9e74",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "00b0e80a9371fe6d",
+        "type": "ui-group",
+        "name": "Header",
+        "page": "e0ea2f2bc6d56b75",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "df1671a08c28863a",
+        "type": "ui-group",
+        "name": "Environment",
+        "page": "e0ea2f2bc6d56b75",
+        "width": "24",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "7fced0b53693bf64",
+        "type": "ui-group",
+        "name": "Activity",
+        "page": "e0ea2f2bc6d56b75",
+        "width": "12",
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "7c1109eb2cbc732a",
+        "type": "ui-group",
+        "name": "Emergency",
+        "page": "e0ea2f2bc6d56b75",
+        "width": "6",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "639d250b715fb778",
+        "type": "ui-group",
+        "name": "Nurse Status",
+        "page": "e0ea2f2bc6d56b75",
+        "width": "6",
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "3210570b02e71eb4",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "66d29b982ef356be",
+        "type": "ui-group",
+        "name": "Visitor Details",
+        "page": "91e580087985d506",
+        "width": "12",
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "62492a4fe2ca1547",
+        "type": "mqtt in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "topic": "team8/sensor/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7b0512bfde0a49a4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "4205659cca8be8ca"
+            ]
+        ]
+    },
+    {
+        "id": "8b357b4165a2b5a2",
+        "type": "mqtt in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "topic": "team9/sensor/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7b0512bfde0a49a4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 380,
+        "wires": [
+            [
+                "8038630ac1efbb68"
+            ]
+        ]
+    },
+    {
+        "id": "c51a2e3d2d8aeba6",
+        "type": "mqtt out",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "topic": "team9/LED",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7b0512bfde0a49a4",
+        "x": 1030,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "63cc9e3032cc4bee",
+        "type": "inject",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on1",
+        "payloadType": "str",
+        "x": 350,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f78fa7a91bd036d6",
+        "type": "inject",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off1",
+        "payloadType": "str",
+        "x": 350,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b2066fbee5b59d6",
+        "type": "mqtt in",
+        "z": "321d49d9e41de9aa",
+        "name": "t9",
+        "topic": "team9/sensor/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7b0512bfde0a49a4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 880,
+        "wires": [
+            [
+                "8a22c977fc0b4024"
+            ]
+        ]
+    },
+    {
+        "id": "9eea85e11e1cd93e",
+        "type": "mqtt in",
+        "z": "321d49d9e41de9aa",
+        "name": "t8",
+        "topic": "team8/sensor/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7b0512bfde0a49a4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 940,
+        "wires": [
+            [
+                "8a22c977fc0b4024"
+            ]
+        ]
+    },
+    {
+        "id": "8a22c977fc0b4024",
+        "type": "function",
+        "z": "321d49d9e41de9aa",
+        "name": "avg",
+        "func": "let value = Number(msg.payload);\n\nif (msg.topic === \"team8/sensor/temperature\") {\n    context.set(\"t8\", value);\n}\n\nif (msg.topic === \"team9/sensor/temperature\") {\n    context.set(\"t9\", value);\n}\n\nlet t8 = context.get(\"t8\");\nlet t9 = context.get(\"t9\");\n\nif (t8 !== undefined && t9 !== undefined) {\n    msg.payload = (t8 + t9) / 2;\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 920,
+        "wires": [
+            [
+                "d83383b7f34bc02f"
+            ]
+        ]
+    },
+    {
+        "id": "d83383b7f34bc02f",
+        "type": "debug",
+        "z": "321d49d9e41de9aa",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "19f03959207997f2",
+        "type": "ui-switch",
+        "z": "321d49d9e41de9aa",
+        "name": "Switch 1",
+        "label": "switch 1",
+        "group": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "payload",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "on1",
+        "onvalueType": "str",
+        "onicon": "mdi-emoticon-happy-outline",
+        "oncolor": "orange",
+        "offvalue": "off1",
+        "offvalueType": "str",
+        "officon": "mdi-emoticon-neutral-outline",
+        "offcolor": "gray",
+        "x": 700,
+        "y": 700,
+        "wires": [
+            [
+                "c51a2e3d2d8aeba6"
+            ]
+        ]
+    },
+    {
+        "id": "4205659cca8be8ca",
+        "type": "ui-gauge",
+        "z": "321d49d9e41de9aa",
+        "name": "temp Gauge",
+        "group": "",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperature",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "thermometer",
+        "prefix": "",
+        "suffix": "°C",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#4d7c21",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "25",
+                "color": "#e2b310",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "60",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1010,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8038630ac1efbb68",
+        "type": "ui-gauge",
+        "z": "321d49d9e41de9aa",
+        "name": "Humidity Gauge",
+        "group": "",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humidity",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "mdi-water",
+        "prefix": "",
+        "suffix": "%",
+        "segments": [
+            {
+                "from": "50",
+                "color": "#1fb8c0",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#004e9b",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1020,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b57b204c2bf553d",
+        "type": "ui-switch",
+        "z": "321d49d9e41de9aa",
+        "name": "Switch 2",
+        "label": "switch 2",
+        "group": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "on2",
+        "onvalueType": "str",
+        "onicon": "mdi-emoticon-happy-outline",
+        "oncolor": "orange",
+        "offvalue": "off2",
+        "offvalueType": "str",
+        "officon": "mdi-emoticon-neutral-outline",
+        "offcolor": "gray",
+        "x": 700,
+        "y": 600,
+        "wires": [
+            [
+                "c51a2e3d2d8aeba6"
+            ]
+        ],
+        "icon": "font-awesome/fa-eye"
+    },
+    {
+        "id": "510da7f564c62709",
+        "type": "mqtt in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "topic": "team9/sensor/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7b0512bfde0a49a4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1220,
+        "wires": [
+            [
+                "ca4e5ece30e7d8f5"
+            ]
+        ]
+    },
+    {
+        "id": "ca4e5ece30e7d8f5",
+        "type": "function",
+        "z": "321d49d9e41de9aa",
+        "name": "function 1",
+        "func": "let temp = parseFloat(msg.payload);\nlet lastSent = context.get(\"lastSent\") || 0;\n\nif (temp < 28 && (Date.now() - lastSent > 60000)) {\n    context.set(\"lastSent\", Date.now());\n\n    msg.payload = {\n        subject: \"⚠️ Temperature Alert\",\n        text: `Temperature dropped below 28°C.\\nCurrent value: ${temp} °C\\n\\nPlease switch ON the LED.`,\n        temp: temp\n    };\n\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1220,
+        "wires": [
+            [
+                "fb2f7b666053ee49",
+                "e47e6c126380349f"
+            ]
+        ]
+    },
+    {
+        "id": "fb2f7b666053ee49",
+        "type": "mqtt out",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "topic": "team9/LED",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7b0512bfde0a49a4",
+        "x": 790,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "e47e6c126380349f",
+        "type": "email-node",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "emailConfig": "",
+        "x": 790,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19eefe47fbce9f71",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "url": "",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "x": 170,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da26899d747e1ac1",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "Serve UI",
+        "url": "/",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 1580,
+        "wires": [
+            [
+                "80a432ed1de79eca"
+            ]
+        ]
+    },
+    {
+        "id": "1ccd23eb06c9f8bc",
+        "type": "http response",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1020,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "bd2e4e037b22582d",
+        "type": "mqtt in",
+        "z": "321d49d9e41de9aa",
+        "name": "Humidity in",
+        "topic": "team9/sensor/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 2260,
+        "wires": [
+            [
+                "1332f940356832e4"
+            ]
+        ]
+    },
+    {
+        "id": "1332f940356832e4",
+        "type": "function",
+        "z": "321d49d9e41de9aa",
+        "name": "combine sensor",
+        "func": "let temp = flow.get(\"temp\") || 0;\nlet hum = flow.get(\"hum\") || 0;\n\nif (msg.topic === \"team9/sensor/temperature\") {\n    temp = Number(msg.payload);\n    flow.set(\"temp\", temp);\n}\n\nif (msg.topic === \"team9/sensor/humidity\") {\n    hum = Number(msg.payload);\n    flow.set(\"hum\", hum);\n}\n\nmsg.payload = {\n    temp: temp,\n    hum: hum\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 2220,
+        "wires": [
+            [
+                "c495db1a11684dc4"
+            ]
+        ]
+    },
+    {
+        "id": "d691c4216fe1c81d",
+        "type": "template",
+        "z": "321d49d9e41de9aa",
+        "name": "Dashboard UI",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\"/>\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\"/>\n<style>\n/* ===== YOUR ORIGINAL CSS (UNCHANGED except triangle) ===== */\n*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}\n:root{\n  --bg:#0b0b12;--card:#12121e;--card2:#0e0e1a;--border:#1c1c2e;\n  --text:#e4e4f0;--sub:#7070a0;\n  --red:#ff3d5a;--blue:#3d9fff;--yellow:#ffcc44;--green:#00d48a;\n  --green-acc:#00ffc3;--radius:18px;\n}\nhtml,body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:14px}\n\n/* ===== TRIANGLE FIX (UPRIGHT /\\ ) ===== */\n.cone{\n  position:absolute;\n  top:38px;\n  left:50%;\n  transform:translateX(-50%);\n  width:0;height:0;\n  border-left:65px solid transparent;\n  border-right:65px solid transparent;\n  border-bottom:90px solid rgba(var(--rr),var(--rg),var(--rb),0);\n  transition:.4s;\n}\n.rc.on .cone{\n  border-bottom-color:rgba(var(--rr),var(--rg),var(--rb),.25);\n}\n\n/* ===== KEEP REST SAME (trimmed for clarity, your original works) ===== */\n</style>\n</head>\n\n<body>\n\n<!-- ===== YOUR FULL HTML BODY (UNCHANGED) ===== -->\n<!-- (I’m keeping it compact here but USE YOUR FULL ORIGINAL BODY exactly) -->\n\n<!-- KEEP EVERYTHING SAME ABOVE SCRIPT -->\n\n<script>\n\n/* ===== CLOCK ===== */\n(function tick(){\n  var d=new Date(),z=n=>String(n).padStart(2,'0');\n  document.getElementById('clk').textContent=\n  z(d.getHours())+':'+z(d.getMinutes())+':'+z(d.getSeconds());\n  setTimeout(tick,1000);\n})();\n\n/* ===== ROOM UI ===== */\nfunction updateCount(){\n  let n=0;\n  ['red','blue','yellow','green'].forEach(c=>{\n    if(document.getElementById('card-'+c).classList.contains('on')) n++;\n  });\n  document.getElementById('cnt').textContent=n;\n}\n\nfunction applyRoom(color,on){\n  let card=document.getElementById('card-'+color);\n  let lbl=document.getElementById('lbl-'+color);\n  let fri=document.getElementById('fr-'+color);\n  let frs=document.getElementById('frs-'+color);\n\n  if(on){\n    card.classList.add('on');\n    lbl.textContent='LIGHT ON';\n    fri.classList.add('on');\n    frs.textContent='ON';\n  } else {\n    card.classList.remove('on');\n    lbl.textContent='LIGHT OFF';\n    fri.classList.remove('on');\n    frs.textContent='OFF';\n  }\n  updateCount();\n}\n\nfunction cardClick(color){\n  let sw=document.getElementById('sw-'+color);\n  sw.checked=!sw.checked;\n  ledToggle(color,sw.checked);\n}\n\n/* ===== LED CONTROL (Node-RED API) ===== */\nfunction ledToggle(color,on){\n  applyRoom(color,on);\n\n  fetch(`/led/${color}/${on?'on':'off'}`)\n    .then(res=>{\n      if(!res.ok) applyRoom(color,!on);\n    })\n    .catch(()=>{\n      applyRoom(color,!on);\n    });\n}\n\n/* ===== SENSOR LIVE UPDATE ===== */\nsetInterval(()=>{\n  fetch('/sensor')\n    .then(res=>res.json())\n    .then(data=>{\n\n      // values\n      document.getElementById('tempVal').innerHTML =\n        data.temp + '<span class=\"unit\">°C</span>';\n\n      document.getElementById('humVal').innerHTML =\n        data.hum + '<span class=\"unit\">%</span>';\n\n      // bars\n      let tPct=Math.min(100,(data.temp/50)*100);\n      let hPct=data.hum;\n\n      document.getElementById('tBar').style.width=tPct+'%';\n      document.getElementById('hBar').style.width=hPct+'%';\n\n      document.getElementById('tPctLbl').innerText=Math.round(tPct)+'%';\n      document.getElementById('hPctLbl').innerText=Math.round(hPct)+'%';\n    });\n},2000);\n\n/* ===== HUMIDIFIER UI ===== */\nfunction humiToggle(on){\n  let l=document.getElementById('humiLeft');\n  let lbl=document.getElementById('humiLbl');\n  let mist=document.getElementById('mistZone');\n\n  l.className='humi-left '+(on?'humi-on':'humi-off');\n  mist.style.display=on?'':'none';\n  lbl.textContent=on?'Auto Mode':'Standby';\n}\n\n</script>\n\n</body>\n</html>",
+        "output": "str",
+        "x": 700,
+        "y": 1580,
+        "wires": [
+            [
+                "1ccd23eb06c9f8bc"
+            ]
+        ]
+    },
+    {
+        "id": "1eaa351859f1fdfb",
+        "type": "http response",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "statusCode": "204",
+        "headers": {},
+        "x": 940,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "46d88a24b26b8e05",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "yellow off",
+        "url": "/led/yellow/off",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 1860,
+        "wires": [
+            [
+                "8dcb5fe78c09f4d6"
+            ]
+        ]
+    },
+    {
+        "id": "8dcb5fe78c09f4d6",
+        "type": "function",
+        "z": "321d49d9e41de9aa",
+        "name": "function 3",
+        "func": "const map = {\n    red:    { on: \"on1\", off: \"off1\" },\n    yellow: { on: \"on2\", off: \"off2\" },\n    blue:   { on: \"on3\", off: \"off3\" },\n    green:  { on: \"on4\", off: \"off4\" }\n};\n\nlet color = msg.req.params.color;\nlet state = msg.req.params.state;\n\nif (!map[color]) {\n    msg.statusCode = 400;\n    return [null, msg];\n}\n\nmsg.payload = map[color][state];\nmsg.topic = \"team9/LED\";\n\nreturn [msg, {statusCode:204}];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1960,
+        "wires": [
+            [
+                "9b31f288caf5db86",
+                "1eaa351859f1fdfb"
+            ]
+        ]
+    },
+    {
+        "id": "9b31f288caf5db86",
+        "type": "mqtt out",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9bdfbd83b4063a4a",
+        "x": 930,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "2a8fcd61be177b1f",
+        "type": "mqtt in",
+        "z": "321d49d9e41de9aa",
+        "name": "Temp in",
+        "topic": "team9/sensor/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 2200,
+        "wires": [
+            [
+                "1332f940356832e4"
+            ]
+        ]
+    },
+    {
+        "id": "4f1f027aaa3151b3",
+        "type": "http response",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1130,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "d9504ac65d3b5be7",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "url": "/sensor",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 1110,
+        "y": 2180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80a432ed1de79eca",
+        "type": "function",
+        "z": "321d49d9e41de9aa",
+        "name": "function 4",
+        "func": "msg.temp = flow.get(\"temp\") || \"0\";\nmsg.hum  = flow.get(\"hum\")  || \"0\";\n\nmsg.tPct = Math.min(100, Math.round((parseFloat(msg.temp)/50)*100));\nmsg.hPct = Math.min(100, Math.round(parseFloat(msg.hum)));\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1580,
+        "wires": [
+            [
+                "d691c4216fe1c81d"
+            ]
+        ]
+    },
+    {
+        "id": "c495db1a11684dc4",
+        "type": "websocket out",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "server": "29fcea56379edb7d",
+        "client": "",
+        "x": 850,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "1516af6629d6e959",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "url": "",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "x": 290,
+        "y": 1900,
+        "wires": [
+            [
+                "8dcb5fe78c09f4d6"
+            ]
+        ]
+    },
+    {
+        "id": "08e08510de0f4193",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "Yellow on",
+        "url": "/led/yellow/on",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 1820,
+        "wires": [
+            [
+                "8dcb5fe78c09f4d6"
+            ]
+        ]
+    },
+    {
+        "id": "46a72f2ac9eb5e28",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "Red off",
+        "url": "/led/red/off",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 1780,
+        "wires": [
+            [
+                "8dcb5fe78c09f4d6"
+            ]
+        ]
+    },
+    {
+        "id": "ec3b3f796c89eff8",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "Red on",
+        "url": "/led/red/on",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 1740,
+        "wires": [
+            [
+                "8dcb5fe78c09f4d6"
+            ]
+        ]
+    },
+    {
+        "id": "0b23c07f7383f757",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "url": "",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "x": 290,
+        "y": 1940,
+        "wires": [
+            [
+                "8dcb5fe78c09f4d6"
+            ]
+        ]
+    },
+    {
+        "id": "db05d7a335141cfc",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "url": "",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "x": 290,
+        "y": 1980,
+        "wires": [
+            [
+                "8dcb5fe78c09f4d6"
+            ]
+        ]
+    },
+    {
+        "id": "734cfe2879311b64",
+        "type": "http in",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "url": "",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "x": 290,
+        "y": 2020,
+        "wires": [
+            [
+                "8dcb5fe78c09f4d6"
+            ]
+        ]
+    },
+    {
+        "id": "972b4bd75ffc577d",
+        "type": "inject",
+        "z": "321d49d9e41de9aa",
+        "name": "MESSAGE",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hii ADI|from Node-Red",
+        "payloadType": "str",
+        "x": 440,
+        "y": 2660,
+        "wires": [
+            [
+                "4c74d22174cadd37"
+            ]
+        ]
+    },
+    {
+        "id": "4c74d22174cadd37",
+        "type": "mqtt out",
+        "z": "321d49d9e41de9aa",
+        "name": "",
+        "topic": "team9/lcd/text",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9bdfbd83b4063a4a",
+        "x": 960,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "731841d9fff8659f",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "Temperature",
+        "topic": "hospital/ward1/temp",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "718af7470e61f2cb",
+                "a54e9fb4a9fd978c"
+            ]
+        ]
+    },
+    {
+        "id": "20cc702279a63b01",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "Humidity",
+        "topic": "hospital/ward1/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "5085e34375210e10",
+                "4e04bc46d8116548"
+            ]
+        ]
+    },
+    {
+        "id": "6be81501543b188e",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "Movement",
+        "topic": "hospital/ward1/motion",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 400,
+        "y": 700,
+        "wires": [
+            [
+                "08338aaf2b8580d5"
+            ]
+        ]
+    },
+    {
+        "id": "fe84cf42a855c4d2",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "Emergency",
+        "topic": "hospital/ward1/emergency",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 860,
+        "wires": [
+            [
+                "206e2cd3ad704c48"
+            ]
+        ]
+    },
+    {
+        "id": "8f774bf082fc79f0",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "Visitor",
+        "topic": "hospital/ward1/visitor",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 620,
+        "wires": [
+            [
+                "94e0ae105e45e316"
+            ]
+        ]
+    },
+    {
+        "id": "718af7470e61f2cb",
+        "type": "ui-gauge",
+        "z": "2ca43265f937fbf2",
+        "name": "Temperature",
+        "group": "df1671a08c28863a",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "🌡 Temperature",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "thermometer",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#4acfcd",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "18",
+                "color": "#17ab28",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "25",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 650,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a54e9fb4a9fd978c",
+        "type": "function",
+        "z": "2ca43265f937fbf2",
+        "name": "Temp Health Status",
+        "func": "let temp = Number(msg.payload);\n\nif(temp >= 22 && temp <= 28){\n    msg.payload = \"✅ HEALTHY\";\n}\nelse if(temp > 28 && temp <= 35){\n    msg.payload = \"⚠ WARNING\";\n}\nelse{\n    msg.payload = \"🚨 CRITICAL\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 460,
+        "wires": [
+            [
+                "1a49711738081b23"
+            ]
+        ]
+    },
+    {
+        "id": "1a49711738081b23",
+        "type": "ui-text",
+        "z": "2ca43265f937fbf2",
+        "group": "df1671a08c28863a",
+        "order": 4,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": true,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 950,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d32014535afdacb1",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "c3864b1e29e86242",
+        "page": "",
+        "ui": "",
+        "name": "patient header",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<div style=\"\nbackground:#1976d2;\npadding:18px;\nborder-radius:14px;\ntext-align:center;\ncolor:white;\nfont-size:28px;\nfont-weight:bold;\nfont-family:Arial;\nbox-shadow:0px 2px 10px rgba(0,0,0,0.15);\n\">\n\nWardWhisper<br>\n<h6>Patient Safety powered by IoT</h6>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "686cec604fe97787",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "00b0e80a9371fe6d",
+        "page": "",
+        "ui": "",
+        "name": "monitor header",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<div style=\"\nbackground:#1976d2;\npadding:18px;\nborder-radius:14px;\ntext-align:center;\ncolor:white;\nfont-size:28px;\nfont-weight:bold;\nfont-family:Arial;\nbox-shadow:0px 2px 10px rgba(0,0,0,0.15);\n\">\n\nWardWhisper<br>\n<h6>Patient Safety powered by IoT</h6>\n</div>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c9c26af1c7a7d001",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "ad83361f132eeae5",
+        "page": "",
+        "ui": "",
+        "name": "patient profile",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "head": "",
+        "format": "<div style=\"\nbackground:white;\npadding:20px;\nborder-radius:18px;\nfont-family:Arial;\nbox-shadow:0px 2px 12px rgba(0,0,0,0.1);\ncolor:#333;\nheight:100%;\n\">\n\n<div style=\"\ndisplay:flex;\nalign-items:center;\ngap:20px;\n\">\n\n<!-- PATIENT IMAGE -->\n\n<img\nsrc=\"/patient.png\"\nstyle=\"\nwidth:120px;\nheight:120px;\nborder-radius:15px;\nobject-fit:cover;\nborder:4px solid #1976d2;\n\"\n/>\n\n<!-- PATIENT INFO -->\n\n<div>\n\n<h2 style=\"\ncolor:#1976d2;\nmargin-top:0;\n\">\n\n</h2>\n\n<p><b>Name:</b> Deeksha </p>\n\n<p><b>Age:</b> 26</p>\n\n<p><b>Gender:</b> Female</p>\n\n<p><b>Blood Group:</b> O+</p>\n\n<p><b>Ward:</b> ICU-2</p>\n\n<p><b>Bed Number:</b> B12</p>\n\n<p><b>Doctor:</b> Dr. Sharma</p>\n\n<p>\n<b>Condition:</b>\n\n<span style=\"\ncolor:green;\nfont-weight:bold;\n\">\nStable\n</span>\n\n</p>\n\n</div>\n\n</div>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee8cc190520aaa33",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "3cd335d72575d2b2",
+        "page": "",
+        "ui": "",
+        "name": "medical info",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "head": "",
+        "format": "<div style=\"\nbackground:white;\npadding:20px;\nborder-radius:18px;\nfont-family:Arial;\nbox-shadow:0px 2px 12px rgba(0,0,0,0.1);\ncolor:#333;\nheight:100%;\n\">\n\n<h2 style=\"color:#1976d2;\">\n🩺 Medical Information\n</h2>\n\n<hr>\n\n<p><b>Allergies:</b> Penicillin</p>\n\n<p><b>Heart Rate:</b> Stable</p>\n\n<p><b>Blood Pressure:</b> Normal</p>\n\n<p><b>Oxygen Level:</b> Normal</p>\n\n<p><b>Emergency Contact:</b></p>\n\n<p>\n+91 XXXXX XXXXX\n</p>\n\n<p>\n<b>Current Status:</b>\n\n<span style=\"\ncolor:green;\nfont-weight:bold;\n\">\nSAFE\n</span>\n</p>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 190,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5085e34375210e10",
+        "type": "ui-gauge",
+        "z": "2ca43265f937fbf2",
+        "name": "Humidity",
+        "group": "df1671a08c28863a",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "💧 Humidity",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "drop",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 640,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1c578ed8f19ab2d",
+        "type": "ui-text",
+        "z": "2ca43265f937fbf2",
+        "group": "df1671a08c28863a",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": true,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 950,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4e04bc46d8116548",
+        "type": "function",
+        "z": "2ca43265f937fbf2",
+        "name": "function 2",
+        "func": "let hum = Number(msg.payload);\n\nif(hum >= 40 && hum <= 60){\n    msg.payload = \"✅ NORMAL\";\n}\nelse{\n    msg.payload = \"⚠ UNHEALTHY\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 280,
+        "wires": [
+            [
+                "d1c578ed8f19ab2d"
+            ]
+        ]
+    },
+    {
+        "id": "08338aaf2b8580d5",
+        "type": "function",
+        "z": "2ca43265f937fbf2",
+        "name": "function 5",
+        "func": "let count = context.get('count') || 0;\n\ncount++;\n\ncontext.set('count', count);\n\nif(count > 5){\n    msg.payload = \"⚠ UNUSUAL MOVEMENT\";\n}\nelse{\n    msg.payload = \"✅ NORMAL\";\n}\n\nsetTimeout(() => {\n    context.set('count',0);\n},15000);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 700,
+        "wires": [
+            [
+                "1f213037e0e1faab"
+            ]
+        ]
+    },
+    {
+        "id": "063f61bf7f858a29",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "7c1109eb2cbc732a",
+        "page": "",
+        "ui": "",
+        "name": "alert card",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "head": "",
+        "format": "<div ng-if=\"msg.payload!=''\"\n\nstyle=\"\nbackground:#ffebee;\nborder-left:12px solid red;\npadding:20px;\nborder-radius:18px;\nbox-shadow:0px 2px 12px rgba(0,0,0,0.1);\n\">\n\n<h2 style=\"color:red;\">\n🚨 Emergency Alert\n</h2>\n\n<h1 style=\"\nfont-size:40px;\ncolor:#b00020;\nfont-weight:bold;\n\">\n\n{{msg.payload}}\n\n</h1>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 920,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5dc04f76c03fb5b0",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "",
+        "topic": "hospital/ward1/acknowledged",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 940,
+        "wires": [
+            [
+                "206e2cd3ad704c48",
+                "7f43888031716439"
+            ]
+        ]
+    },
+    {
+        "id": "412e35bee0838a4b",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "639d250b715fb778",
+        "page": "",
+        "ui": "",
+        "name": "Nurse Status",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "head": "",
+        "format": "<style>\n@keyframes sirenFlash {\n  0% { transform: rotate(-12deg); }\n  50% { transform: rotate(12deg); }\n  100% { transform: rotate(-12deg); }\n}\n\n.siren {\n  font-size:70px;\n  animation:sirenFlash 0.5s infinite;\n}\n</style>\n\n<!-- Emergency State -->\n\n<div v-if=\"msg.payload === 'EMERGENCY'\"\n\nstyle=\"\nbackground:#ffebee;\nborder-left:12px solid red;\npadding:20px;\nborder-radius:18px;\ntext-align:center;\nbox-shadow:0px 2px 12px rgba(0,0,0,0.1);\nmin-height:220px;\ndisplay:flex;\njustify-content:center;\nalign-items:center;\nflex-direction:column;\n\">\n\n<div class=\"siren\">🚨</div>\n\n<h1 style=\"\ncolor:red;\nfont-size:36px;\nfont-weight:bold;\n\">\nEMERGENCY ACTIVE\n</h1>\n\n</div>\n\n<!-- Acknowledged State -->\n\n<div v-if=\"msg.payload === 'ACKNOWLEDGED'\"\n\nstyle=\"\nbackground:#e8f5e9;\nborder-left:12px solid green;\npadding:20px;\nborder-radius:18px;\ntext-align:center;\nbox-shadow:0px 2px 12px rgba(0,0,0,0.1);\nmin-height:220px;\ndisplay:flex;\njustify-content:center;\nalign-items:center;\nflex-direction:column;\n\"\">\n\n<h1 style=\"\ncolor:green;\nfont-size:36px;\nfont-weight:bold;\n\">\n✅ ACKNOWLEDGED\n</h1>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1110,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1373c0367877dbe",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "",
+        "page": "",
+        "ui": "b9ca4eb937cd9e74",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n\n/* Entire dashboard background */\n\nbody {\n    background-color: #f4f7fb !important;\n    font-family: Arial, sans-serif;\n}\n\n/* Remove cyan group panels */\n\n.nrdb-ui-group {\n    background: transparent !important;\n}\n\n/* Group containers */\n\n.nrdb-ui-card {\n    background: white !important;\n    border-radius: 18px !important;\n    box-shadow: 0px 2px 12px rgba(0,0,0,0.08) !important;\n}\n\n/* Group titles */\n\n.nrdb-ui-group-title {\n    color: #1976d2 !important;\n    font-size: 22px !important;\n    font-weight: bold !important;\n}\n\n/* Top toolbar */\n\nheader {\n    background-color: #1976d2 !important;\n}\n\n/* Toolbar text */\n\nheader * {\n    color: white !important;\n}\n\n/* Dashboard page spacing */\n\nmain {\n    padding: 10px !important;\n}\n\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 180,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d2409f76d8e95a6",
+        "type": "inject",
+        "z": "2ca43265f937fbf2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "iso",
+        "payloadType": "date",
+        "x": 170,
+        "y": 1240,
+        "wires": [
+            [
+                "a7a3b6b4482ff76c"
+            ]
+        ]
+    },
+    {
+        "id": "a7a3b6b4482ff76c",
+        "type": "http request",
+        "z": "2ca43265f937fbf2",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS-i0hDSIlSM0FeDGJ7xl9ZcxglWMI0KWe3Zlcm5_Fg0qlmWjWDdLJpIxOpYAG7GoLkHr3S-GhYdVOp/pub?output=csv",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 1240,
+        "wires": [
+            [
+                "ab7e1b2c755ec5af"
+            ]
+        ]
+    },
+    {
+        "id": "ab7e1b2c755ec5af",
+        "type": "csv",
+        "z": "2ca43265f937fbf2",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 550,
+        "y": 1240,
+        "wires": [
+            [
+                "1021c2c57967e8f5"
+            ]
+        ]
+    },
+    {
+        "id": "1021c2c57967e8f5",
+        "type": "function",
+        "z": "2ca43265f937fbf2",
+        "name": "function 6",
+        "func": "msg.payload = msg.payload.map(row => {\n\n    let parts = row[\"Timestamp\"].split(\" \");\n\n    return {\n\n        \"Visitor Name\": row[\"Visitor Name\"],\n        \"Relationship\": row[\"Relationship\"],\n        \"Date\": row[\"Date\"],\n        \"Time\": parts[1],\n\n        \"Duration\": row[\"Visiting hours\"]\n\n    };\n\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 1240,
+        "wires": [
+            [
+                "4f488c60f55835c8"
+            ]
+        ]
+    },
+    {
+        "id": "94e0ae105e45e316",
+        "type": "function",
+        "z": "2ca43265f937fbf2",
+        "name": "visitor integration",
+        "func": "let data = flow.get(\"visitorData\") || {};\n\nif(msg.topic === \"hospital/ward1/visitor_count\"){\n    data.count = msg.payload;\n}\n\nif(msg.topic === \"hospital/ward1/visitor\"){\n    data.status = msg.payload;\n}\n\nflow.set(\"visitorData\", data);\n\nmsg.payload = data;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "377d5e187c7ff68f",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "Visitor count",
+        "topic": "hospital/ward1/visitor_count",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 560,
+        "wires": [
+            [
+                "94e0ae105e45e316"
+            ]
+        ]
+    },
+    {
+        "id": "4f488c60f55835c8",
+        "type": "ui-table",
+        "z": "2ca43265f937fbf2",
+        "group": "66d29b982ef356be",
+        "name": "Visitor table",
+        "label": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 1050,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc932d6daa89a937",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "Visitor status",
+        "topic": "hospital/ward1/visitor",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 1380,
+        "wires": [
+            [
+                "706696c3d3d322f9"
+            ]
+        ]
+    },
+    {
+        "id": "9044b1bbfcc037f4",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "Visitor counter",
+        "topic": "hospital/ward1/visitor_count",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 1440,
+        "wires": [
+            [
+                "706696c3d3d322f9"
+            ]
+        ]
+    },
+    {
+        "id": "706696c3d3d322f9",
+        "type": "function",
+        "z": "2ca43265f937fbf2",
+        "name": "function 7",
+        "func": "let visitor = flow.get(\"visitor\") || {};\n\nif (msg.topic === \"hospital/ward1/visitor_count\"){\n    visitor.count = msg.payload;\n}\n\nif(msg.topic === \"hospital/ward1/visitor\"){\n    visitor.status = msg.payload;\n}\n\nflow.set(\"visitor\", visitor);\n\nmsg.payload = visitor;\n\nreturn msg;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1420,
+        "wires": [
+            [
+                "18308c2ac3697e10"
+            ]
+        ]
+    },
+    {
+        "id": "18308c2ac3697e10",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "7fced0b53693bf64",
+        "page": "",
+        "ui": "",
+        "name": "Visitor card",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "head": "",
+        "format": "<div style=\"\nbackground:white;\npadding:20px;\nborder-radius:18px;\nbox-shadow:0px 2px 10px rgba(0,0,0,0.08);\nheight:100%;\ntext-align:center;\n\">\n\n<h2 style=\"color:#1976d2;\">\n👥 Visitor Monitoring\n</h2>\n\n<div style=\"\nfont-size:52px;\nfont-weight:bold;\ncolor:#1976d2;\nmargin-top:15px;\n\">\n{{msg.payload.count}}\n</div>\n\n<div style=\"\nfont-size:22px;\nfont-weight:bold;\nmargin-top:10px;\n\">\n\n{{msg.payload.status==\"ENTERED\"\n? \"🟢 ENTERED\"\n: \"🔴 EXITED\"}}\n\n</div>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f213037e0e1faab",
+        "type": "ui-template",
+        "z": "2ca43265f937fbf2",
+        "group": "7fced0b53693bf64",
+        "page": "",
+        "ui": "",
+        "name": "Movement card",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "head": "",
+        "format": "<div style=\"\nbackground:white;\npadding:20px;\nborder-radius:18px;\nbox-shadow:0px 2px 10px rgba(0,0,0,0.08);\nheight:100%;\ntext-align:center;\n\">\n\n<h2 style=\"color:#1976d2;\">\nPatient Movement\n</h2>\n\n<div style=\"\nfont-size:24px;\nfont-weight:bold;\nmargin-top:25px;\n\">\n\n{{msg.payload}}\n\n</div>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 940,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f43888031716439",
+        "type": "function",
+        "z": "2ca43265f937fbf2",
+        "name": "function 8",
+        "func": "if(msg.topic === \"hospital/ward1/emergency\"){\n    msg.payload = \"EMERGENCY\";\n}\nelse if(msg.topic === \"hospital/ward1/acknowledged\"){\n    msg.payload = \"ACKNOWLEDGED\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 1060,
+        "wires": [
+            [
+                "05cac7dade8a9af2",
+                "412e35bee0838a4b"
+            ]
+        ]
+    },
+    {
+        "id": "2879ad7fd2e49646",
+        "type": "mqtt in",
+        "z": "2ca43265f937fbf2",
+        "name": "",
+        "topic": "hospital/ward1/emergency",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9bdfbd83b4063a4a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 1060,
+        "wires": [
+            [
+                "7f43888031716439"
+            ]
+        ]
+    },
+    {
+        "id": "206e2cd3ad704c48",
+        "type": "function",
+        "z": "2ca43265f937fbf2",
+        "name": "function 9",
+        "func": "let status = flow.get(\"emergencyStatus\") || \"\";\n\nif(msg.topic === \"hospital/ward1/emergency\") {\n\n    status = \"NURSE NEEDED\";\n\n}\n\nif(msg.topic === \"hospital/ward1/acknowledged\") {\n\n    status = \"\";\n\n}\n\nflow.set(\"emergencyStatus\", status);\n\nmsg.payload = status;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 880,
+        "wires": [
+            [
+                "063f61bf7f858a29"
+            ]
+        ]
+    },
+    {
+        "id": "05cac7dade8a9af2",
+        "type": "debug",
+        "z": "2ca43265f937fbf2",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "7dfeff420be668f0",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-dashboard": "3.6.6",
+            "node-red-supemail-node": "1.0.5"
+        }
+    }
+]
