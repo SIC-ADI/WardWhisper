@@ -171,7 +171,7 @@ Visitor Counter ESP32
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/AEGIS-Smart-Silent-Hospital-Assistant.git
+git clone https://github.com/SIC-ADI/WardWhisper.git
 ```
 
 ### Upload ESP32 Codes
@@ -222,16 +222,3 @@ http://localhost:1880/dashboard
 - Cloud database integration
 - Multi-ward support
 
----
-
-## Team
-
-Major Project – IoT Based Smart Healthcare Monitoring System
-
-Department of Computer Science & Engineering
-
----
-
-## License
-
-This project is developed for educational and research purposes.
